@@ -1,0 +1,58 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-1</title>
+    <style>
+        p {
+            font-size: 30px;
+            color: red;
+        }
+        #title {
+            font-size: 50px;
+            color: blue;
+        }
+        #title.box {
+            background-color: aqua;
+        }
+        section div {
+            background-color: red;
+        }
+        label + input {
+            background-color: green;
+        }
+        a[href="https://www.naver.com"] span{
+            background-color: black;
+        }
+        #dot {
+            width: 3px;
+            height: 3px;
+            background-color: black;
+        }
+        #variant {
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <p>p태그를 모두 선택합니다.</p>
+    <div id="title" class="box">
+        id 속성값이 title인 태그를 선택합니다.
+    </div>
+    <section>
+        <div>section 태그의 하위에 있는 모든 div 태그를 선택합니다.</div>
+        <div>section 태그의 하위에 있는 모든 div 태그를 선택합니다.</div>
+        <div>section 태그의 하위에 있는 모든 div 태그를 선택합니다.</div>
+        <div>section 태그의 하위에 있는 모든 div 태그를 선택합니다.</div>
+    </section>
+    <form action="#">
+        <label></label>
+        <input>
+    </form>
+    <a href="https://www.naver.com">naver</a>
+    <a href="https://www.naver.com"><span>naver</span></a>
+    
+    <div id="dot"></div>
+    <p id="variant">variant VARIANT</p>
+</body>
+</html>

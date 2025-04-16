@@ -1,0 +1,77 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-1</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            
+        }
+        .red-box {
+            background-color: red;
+            float: left;
+        }
+        .green-box {
+            background-color: green;
+            float: left;
+        }
+        .blue-box {
+            background-color: blue;
+            float: left;
+        }
+        .black-box {
+            background-color: black;
+            width: 50px;
+            height: 200px;
+            transition: width, 1s, ease-in, 1s;
+            transition: background-color, 1s, ease-in, 1s;
+        }
+        .black-box:hover {
+            width: 300px;
+            background-color: gray;
+        }
+        .container {
+            overflow: hidden;
+        }
+        .rainbow-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: bgchange;
+            animation-duration: 5s;
+            border-radius: 50%;
+            animation-fill-mode: forwards;
+        }
+        @keyframes bgchange {
+            0% {background-color: red;}
+            14% {background-color: orange;}
+            28% {background-color: yellow;}
+            42% {background-color: green;}
+            56% {background-color: blue;}
+            70% {background-color: navy;}
+            100% {background-color: purple;}
+        }
+        .moving-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .moving-box:hover {
+            transform: translate(100px,200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red-box"></div>
+        <div class="box green-box"></div>
+        <div class="box blue-box"></div>
+    </div>
+    
+    <div class="box black-box"></div>
+    <div class="rainbow-box"></div>
+    <div class="moving-box"></div>
+</body>
+</html>
